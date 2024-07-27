@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MS Paint</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <button class="a active" >File</button>
+        <button class="a">Home</button>
+        <button class="a">View</button>
+        <button class="a" id="clearCanvas">Clear</button>
+        <button class="a" id="saveCanvas">Save</button>
+        <button class="a" id="eraser">Eraser</button>
+    </div>
+    
+    <div class="toolbar">
+        <div class="container2">
+            <div id="clipboard">
+                <div id="paste">
+                    <div>Paste</div>
+                    <img src="https://cdn3.iconfinder.com/data/icons/tango-icon-library/48/edit-paste-512.png" id="pasteimg">
+                </div>
+                <div id="clip">
+                    <div id="cut">
+                        <i class="fa-solid fa-scissors"></i><span> Cut</span>
+                    </div>
+                    <div id="copy">
+                        <i class="fa-solid fa-copy"></i>  <span>Copy</span>
+                    </div>
+                </div>
+            </div>
+            <div id="first">Clipboard</div>
+        </div>
+        <div class="container3">
+            <div class="images">
+                <div class="selects">
+
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmwG75v9y0ubFYQ4eTPMpMFjFNNk5oUW0-Fb_MhJOS-AMFpotN03cE8r2yq6H4ZRh-N0c&usqp=CAU" width="30px" height="30px">
+                   <div id="select">Select</div>
+
+                </div>
+                <div id="effects">
+                    <div id="crop"><i class="fa-solid fa-crop"></i> <span>Crop</span> </div>
+                    <div id="resize"><i class="fa-solid fa-expand"></i>  <span>Resize</span></div>
+                    <div id="rotate"><i class="fa-solid fa-rotate"></i>  <span>Rotate</span></div>
+                </div>
+            </div>
+            <div id="first">Images</div>
+        </div>
+        <div class="container4">
+            <div class="tools">
+                <div id="tab">
+                    <table>
+                        <tr>
+                            <td><img src="https://cdn-icons-png.freepik.com/512/233/233827.png" width="20px" height="20px"></td>
+                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxR6dS7eO-pTghi63p16v-UCe3f-GSfUlGug&s" width="25px" height="25px"></td>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Letter_A.svg/2048px-Letter_A.svg.png" width="25px" height="25px"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7bu02XuNa85qMlLa1OgZ7i-_KuizHfBxqNw&s" width="25px" height="25px"></td>
+                            <td><img src="https://cdn-icons-png.freepik.com/512/105/105094.png" width="22px" height="22px"></td>
+                            <td><img src="https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-vector-search-icon-png-image_320926.jpg" width="22px" height="22px"></td>
+
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="first">Tools</div>
+
+        </div>
+        <div class="container5">
+        
+             <div id="brushImag">
+         <center><button ><img src="https://i.pinimg.com/736x/7e/6a/4a/7e6a4aa291bbeff854a7326b943889c5.jpg" width="30px" height="40px"></button></center> 
+        </div>
+        <select name="brushes" id="brushes">
+            <option value="brush"><b>Brushes</b></option>
+                <option value="Pen">Pen</option>
+                <option value="Pencil">Pencil</option>
+                <option value="Marker">Marker</option>
+                <option value="fill">fill</option>
+              </select>
+        </div>
+    
+    <div class="container6">
+        <div class="shapes">
+                <table id="tab">
+                    <tr>
+                        <td class="shape"><i class="fas fa-slash" ></i> </td>
+                        <td class="shape"><i class="fas fa-circle" ></i></td>
+                        <td class="shape"><i class="fas fa-square"></i></td>
+                        <td class="shape"><i class="fas fa-play"></i></td>
+                        <td class="shape"> <i class="fa-solid fa-calendar"></i></td>   
+
+                        <td class="shape"><i class="fas fa-star"></i></td>
+                        <td class="shape"><i class="fas fa-square-full"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="shape"><i class="fa-solid fa-comment" > </i> </td>
+                        <td class="shape"><i class="fa-solid fa-arrow-down" ></i></td>
+                        <td class="shape"><i class="fa-solid fa-arrow-up" ></i></td>
+
+                        <td class="shape"><i class="fa-solid fa-arrow-left"></i></td>
+                        <td class="shape"><i class="fa-solid fa-arrow-right" ></i></td>
+                        <td class="shape"><i class="fa-solid fa-diamond"></i></td>
+                        <td class="shape"><i class="fa-solid fa-bookmark"></i></td>
+
+                    </tr>
+                    <tr>
+                        <td class="shape"> <i class="fas fa-heart"></i></td>
+                        <td class="shape"><i class="fa-solid fa-clover"></i></td>
+                        <td class="shape"><i class="fa-solid fa-crown"></i></td>
+                        <td class="shape"><i class="fa-solid fa-location-pin"></i></td>
+                        <td class="shape"><i class="fa-solid fa-cloud"></i></td>   
+                        <td class="shape"> <i class="fa-solid fa-folder"></i></td> 
+                        <td class="shape"> <i class="fa-solid fa-shield"></i></td>      
+                    </tr>
+                </table>
+            </div>
+            <div id="first">Shapes</div>
+            
+        </div>
+        <div class="container7">
+            <div class="size">
+                <div><img src="https://static.thenounproject.com/png/149050-200.png" width="60px" height="60px"></div>
+            <div id="s">Size</div>
+            <div id="s"><i class="fas fa-caret-down"></i></div>
+            
+
+        </div>
+        </div>
+        <div class="container8">
+            <button style="background-color: black; width: 40px; height: 40px;"></button>
+            <div id="color_1">color 1</div>
+        </div>
+        <div class="container9">
+                <button style="background-color: white; width: 40px; height: 40px;"></button>
+            <div id="color_1">color 2</div>
+        </div>
+        <div class="container10">
+            <div class="tab">
+                <table id="table">
+                    <tr>
+                        <td><button class="color" id="blue" style="background-color: blue;"></button></td>
+                        <td><button class="color" style="background-color: green;"></button></td>
+                        <td><button class="color" style="background-color: yellow;"></button></td>
+                        <td><button class="color" style="background-color: violet;"></button></td>
+                        <td><button class="color" style="background-color: red;"></button></td>
+                        <td><button class="color" style="background-color: orange;"></button></td>
+                        <td><button class="color" style="background-color: silver;"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="color" style="background-color: rgb(206, 134, 134);"></button></td>
+                        <td><button class="color" style="background-color: rgb(238, 196, 118);"></button></td>
+                        <td><button class="color" style="background-color: rgb(129, 207, 142);"></button></td>
+                        <td><button class="color" style="background-color: rgb(116, 163, 201);"></button></td>
+                        <td><button class="color" style="background-color: rgb(192, 174, 141);"></button></td>
+                        <td><button class="color" style="background-color: rgb(243, 13, 140);"></button></td>
+                        <td><button class="color" style="background-color: black;"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="color" style="background-color: cyan;"></button></td>
+                        <td><button class="color" style="background-color: lightcoral;"></button></td>
+                        <td><button class="color" style="background-color:indigo"></button></td>
+                        <td><button class="color" style="background-color:brown"></button></td>
+                        <td><button class="color" style="background-color:skyblue"></button></td>
+                        <td><button class="color" style="background-color: gold;"></button></td>
+                        <td><button class="color" style="background-color:white"></button></td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+        <div class="container11">
+            <button style="background-image: linear-gradient(to right,red,yellow,green,blue,skyblue,rgb(206, 14, 103)); width: 40px; height: 40px;"></button>
+        <div id="color_1">To Edit Colors</div>
+    </div>
+    <div class="container12">
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT01MFNeTdjEeHZFngZIZYNNXkGC6K7k6TnxA&s" width="35px" height="35px"></button>
+        <div id="color_1">3D colors</div>
+    </div>
+    </div>
+    <canvas id="paintCanvas" width="1250" height="380"></canvas>
+    <script src="index.js"></script>
+</body>
+
+</html>
